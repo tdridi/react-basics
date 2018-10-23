@@ -6,9 +6,8 @@
   "scripts": {
     "start": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -d && copyfiles -u 1 ./src/index.html ./dist && webpack-dev-server --content-base src/ --inline",
+    "build": "webpack -d && copyfiles -u 1 ./src/index.html ./dist && webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
     "build:prod": "cp src/index.html dist/index.html && webpack -p"
-
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,8 @@
   "dependencies": {
     "npm": "^6.4.1",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "react-router": "^4.3.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -32,8 +32,6 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-2": "^6.11.0",
     "copyfiles": "^2.1.0",
-    "react-script": "^2.0.5",
-    "react-scripts": "^2.0.5",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }
