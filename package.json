@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/tdridi/react#readme",
   "dependencies": {
-    "npm": "^6.4.1",
+    "npm": "^6.13.4",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
